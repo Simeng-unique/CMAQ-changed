@@ -1,0 +1,113 @@
+#   Makefile generated for serial execution using program bldmake
+#
+#   Generation date [05/28/2020  10:00:36]
+#   Configuration file [/nuist/scratch/pb02005030/lism/CMAQ5.3/PREP/create_omi/BLD_create_omi_v53_gcc/create_omi.cfg]
+#   Using GIT repository [/nuist/scratch/pb02005030/lism/CMAQ5.3/PREP/create_omi]
+#   Full Compiler Paths when Makefile was Built:
+#       FC = /usr/bin/gfortran
+#       CC = /usr/bin/cc
+#   Library Paths:
+#      $(LIB)/ioapi/include_files -> /nuist/scratch/pb02005030/pb02005030/CMAQ5.0.1/ioapi-3.2/ioapi/fixed_src
+#      $(LIB)/ioapi/lib -> /nuist/scratch/pb02005030/pb02005030/CMAQ5.0.1/ioapi-3.2/Linux2_x86_64
+#      $(LIB)/mpi -> /nuist/p/public/app/mvapich2/2.3/gnu/4.8.5
+#      $(LIB)/netcdf -> /nuist/p/public/app/netcdf/4.3.0/gnu/4.8.5/lib
+#      $(LIB)/netcdff -> /nuist/p/public/app/netcdf/4.3.0/gnu/4.8.5/lib
+#
+#   Command-Line Options:      
+#      DEBUG = TRUE or true -- turn on debug flags 
+#  OR  debug = true or TRUE -- turn on debug flags 
+#  Can set either variable by using the setenv command for
+#  a debugging session with multiple compilations
+#
+#------------------------------------------------- 
+
+ EXEC = create_omi
+
+ FC = gfortran
+ CC = cc
+
+ LIB = /nuist/scratch/pb02005030/lism/CMAQ5.3/PREP/create_omi/scripts/lib/x86_64/gcc
+ include_path = -I $(LIB)/ioapi/lib \
+                -I $(LIB)/ioapi/include_files \
+                -I $(LIB)/netcdf/include
+
+ WARN = 
+ FSTD = -O2 -funroll-loops -finit-character=32 -Wconversion-extra -Wtabs -Wsurprising
+ DBG  = -Wall -O0 -g -fcheck=all -ffpe-trap=invalid,zero,overflow -fbounds-check -fbacktrace -Wno-zerotrip -Wno-unused-function
+
+ ifneq (,$(filter $(debug), TRUE true True T ))
+     DEBUG = TRUE
+ endif
+
+ ifneq (,$(filter $(DEBUG), TRUE true ))
+     f_FLAGS   = -ffixed-form -ffixed-line-length-132 -funroll-loops -finit-character=32 $(DBG) $(include_path)
+     f90_FLAGS = -ffree-form -ffree-line-length-none -funroll-loops -finit-character=32 $(DBG) $(include_path)
+ else
+     f_FLAGS   = -ffixed-form -ffixed-line-length-132 -funroll-loops -finit-character=32 $(FSTD) $(include_path)
+     f90_FLAGS = -ffree-form -ffree-line-length-none -funroll-loops -finit-character=32 $(FSTD) $(include_path)
+ endif
+
+ F_FLAGS   = $(f_FLAGS)
+ F90_FLAGS = $(f90_FLAGS)
+ C_FLAGS   = -I.
+
+ LINKER     = $(FC)
+ LINK_FLAGS = -fopenmp
+
+ REPOROOT = /nuist/scratch/pb02005030/lism/CMAQ5.3/PREP/create_omi
+
+ CPP = $(FC)
+ cpp_flags = 
+
+ ifneq (,$(filter $(isam), TRUE true True T ))
+     CPP_FLAGS   = $(cpp_flags) -Disam
+ else
+     CPP_FLAGS   = $(cpp_flags)
+ endif
+
+ IOAPI  = -L$(LIB)/ioapi/lib -lioapi
+ NETCDF = -L$(LIB)/netcdff/lib -lnetcdff -L$(LIB)/netcdf/lib -lnetcdf
+ LIBRARIES = $(IOAPI) $(NETCDF)
+
+
+SRC = \
+  get_env_vars.o \
+  module_envvar.o \
+  module_utilities.o \
+  create_CMAQ_OMI.o \
+  create_ioapi_OMI.o \
+  driver.o
+
+OBJS = \
+  $() \
+  $(SRC)
+
+.SUFFIXES: .F .f .c .F90 .f90
+
+$(EXEC): $(OBJS)
+	$(LINKER) $(LINK_FLAGS) $(OBJS) $(LIBRARIES) -o $@
+
+.F.o:
+	$(FC) -c $(F_FLAGS) $(CPP_FLAGS) $(INCLUDES) $<
+
+.f.o:
+	$(FC) -c $(F_FLAGS) $<
+
+.F90.o:
+	$(FC) -c $(F90_FLAGS) $(CPP_FLAGS) $(INCLUDES) $<
+
+.f90.o:
+	$(FC) -c $(F90_FLAGS) $<
+
+.c.o:
+	$(CC) -c $(C_FLAGS) $<
+
+clean:
+	rm -f $(OBJS) *.mod
+
+
+# dependencies
+
+driver.o:	module_envvar.o module_utilities.o
+module_envvar.o:	get_env_vars.o
+module_utilities.o:	module_envvar.o

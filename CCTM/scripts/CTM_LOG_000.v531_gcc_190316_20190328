@@ -1,0 +1,235 @@
+================================================================================          
+|                                                                              |          
+|               The Community Multiscale Air Quality (CMAQ) Model              |          
+|                                   Version 5.3.1                              |          
+|                                                                              |          
+|                          Built and Maintained by the                         |          
+|                        Office of Research and Development                    |          
+|                   United States Environmental Protection Agency              |          
+|                                                                              |          
+|                            https://www.epa.gov/cmaq                          |          
+|                                                                              |          
+|       Source Code:   https://www.github.com/USEPA/cmaq/tree/master           |          
+|       Documentation: https://www.github.com/USEPA/cmaq/tree/master/DOCS      |          
+|                                                                              |          
+|         The CMAQ Model is tested and released with cooperation from          |          
+|         the Community Modeling and Analysis System (CMAS) Center via         |          
+|         contract support. CMAS is managed by the Institute for the           |          
+|         Environment, University of North Carolina at Chapel Hill.            |          
+|         CMAS URL: (https://www.cmascenter.org)                               |          
+|                                                                              |          
+================================================================================          
+
+                                                                                          
+     This program uses the EPA-AREAL/MCNC-EnvPgms/BAMS Models-3                           
+     I/O Applications Programming Interface, [I/O API] which is                           
+     built on top of the netCDF I/O library (Copyright 1993, 1996                         
+     University Corporation for Atmospheric Research/Unidata                              
+     Program) and the PVM parallel-programming library (from                              
+     Oak Ridge National Laboratory).                                                      
+     Copyright (C) 1992-2002 MCNC,                                                        
+     (C) 1992-2013 Carlie J. Coats, Jr.,                                                  
+     (C) 2003-2012 Baron Advanced Meteorological Systems, LLC, and                        
+     (C) 2014-2016 UNC Institute for the Environment.                                     
+     Released under the GNU LGPL  License, version 2.1.  See URL                          
+                                                                                          
+         https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html                          
+                                                                                          
+     for conditions of use.                                                               
+                                                                                          
+     ioapi-3.2: $Id: init3.F90 320 2016-02-26 15:55:00Z coats $                           
+     Version with PARMS3.EXT/PARAMETER::MXVARS3= 2048                                     
+     netCDF version 4.3.0 of Jan  3 2018 09:13:06 $                                       
+                                                                                          
+                                                                                          
+     EXECUTION_ID: CMAQ_CCTMv531_lism_20210302_073930_719499041                           
+     Value for IOAPI_CHECK_HEADERS:  N returning FALSE
+      
+     "MET_CRO_3D" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/METCRO3D_190316.nc"
+     File type GRDDED3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_CROSS"
+     Dimensions: 180 rows, 219 cols, 34 lays, 16 vbles
+     NetCDF ID:     65536  opened as READONLY            
+     Starting date and time  2019087:000000 (0:00:00   March 28, 2019)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number       217
+
+     MET data determined based on WRF ARM version 3.9.1
+
+     Closing file MET_CRO_3D
+
+
+     ========================================
+     |>---   RETRIEVE HORIZONTAL GRID   ---<|
+     ========================================
+
+     File "GRIDDESC" opened for input on unit:  98
+     /nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/GRIDDESC
+
+
+
+     ======================================
+     |>---   RETRIEVE VERTICAL GRID   ---<|
+     ======================================
+      
+     "MET_CRO_3D" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/METCRO3D_190316.nc"
+     File type GRDDED3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_CROSS"
+     Dimensions: 180 rows, 219 cols, 34 lays, 16 vbles
+     NetCDF ID:     65536  opened as READONLY            
+     Starting date and time  2019087:000000 (0:00:00   March 28, 2019)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number       217
+
+     =========================================
+     |>---   RETRIEVE SPECIES NAMELIST   ---<|
+     =========================================
+
+
+     ===========================================
+     |>---   INITIALIZE PROCESS ANALYSIS   ---<|
+     ===========================================
+     PA_DATAGEN: Process Analysis is not activated
+
+
+     ==================================
+     |>---   CONFIGURE SCENARIO   ---<|
+     ==================================
+     INIT_MEDC_1     :notused
+     
+     >>--->> WARNING in subroutine OPEN3
+     File not available.
+     
+      
+     "GRID_CRO_2D" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/GRIDCRO2D_190316.nc"
+     File type GRDDED3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_CROSS"
+     Dimensions: 180 rows, 219 cols, 1 lays, 7 vbles
+     NetCDF ID:    131072  opened as READONLY            
+     Time-independent data.
+      
+     "GRID_DOT_2D" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/GRIDDOT2D_190316.nc"
+     File type GRDDED3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_DOT"
+     Dimensions: 181 rows, 220 cols, 1 lays, 9 vbles
+     NetCDF ID:    196608  opened as READONLY            
+     Time-independent data.
+      
+     "LUFRAC_CRO" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/LUFRAC_CRO_190316.nc"
+     File type GRDDED3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_CROSS"
+     Dimensions: 180 rows, 219 cols, 21 lays, 1 vbles
+     NetCDF ID:    262144  opened as READONLY            
+     Time-independent data.
+      
+     "MET_CRO_2D" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/METCRO2D_190316.nc"
+     File type GRDDED3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_CROSS"
+     Dimensions: 180 rows, 219 cols, 1 lays, 35 vbles
+     NetCDF ID:    327680  opened as READONLY            
+     Starting date and time  2019087:000000 (0:00:00   March 28, 2019)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number       217
+      
+     "MET_DOT_3D" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/METDOT3D_190316.nc"
+     File type GRDDED3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_DOT"
+     Dimensions: 181 rows, 220 cols, 34 lays, 6 vbles
+     NetCDF ID:    393216  opened as READONLY            
+     Starting date and time  2019087:000000 (0:00:00   March 28, 2019)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number       217
+      
+     "GR_EMIS_001" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/emis/gridded_area/gridded/emis.nc"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "2019_BRW_CROSS"
+     Dimensions: 180 rows, 219 cols, 1 lays, 32 vbles
+     NetCDF ID:    458752  opened as READONLY            
+     Time-independent data.
+GR_EM_SYM_DATE_0  |          F
+      
+     "INIT_CONC_1" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/icon/ICON_v531_190316_profile_20190328.nc"
+     File type GRDDED3 
+     Execution ID "ICON_v531.exe"
+     Grid name "2019_BRW"
+     Dimensions: 180 rows, 219 cols, 34 lays, 248 vbles
+     NetCDF ID:    524288  opened as READONLY            
+     Time-independent data.
+     Number of Emissions Layers:           1
+     out of total Number of Model Layers: 34
+      
+     "MET_BDY_3D" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/mcip/2019_BRW/METBDY3D_190316.nc"
+     File type BNDARY3 
+     Execution ID "mcip"
+     Grid name "2019_BRW_CROSS"
+     Dimensions: 180 rows, 219 cols, 34 lays, 16 vbles, 1 cells thick
+     NetCDF ID:    589824  opened as READONLY            
+     Starting date and time  2019087:000000 (0:00:00   March 28, 2019)
+     Timestep                          010000 (1:00:00 hh:mm:ss)
+     Maximum current record number       217
+      
+     "BNDY_CONC_1" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/bcon/BCON_v531_190316_profile_20190328.nc"
+     File type BNDARY3 
+     Execution ID "BCON_v531.exe"
+     Grid name "2019_BRW"
+     Dimensions: 180 rows, 219 cols, 34 lays, 248 vbles, 1 cells thick
+     NetCDF ID:    655360  opened as READONLY            
+     Time-independent data.
+     Warning! Something went wrong while reading the 
+     GeneralSpecs section of the Emissions Control 
+     Namelist. Default values for this section will be 
+     assumed.
+     Warning! Something went wrong while reading the 
+     ChemicalFamilies section of the Emissions Control 
+     Namelist. Default values for this section will be 
+     assumed.
+     Warning! Something went wrong while reading the 
+     StreamFamilies section of the Emissions Control 
+     Namelist. Default values for this section will be 
+     assumed.
+     Warning! Something went wrong while reading the 
+     RegionFamilies section of the Emissions Control 
+     Namelist. Default values for this section will be 
+     assumed.
+      
+     "OCEAN_1" opened as OLD:READ-ONLY   
+     File name "/nuist/scratch/pb02005030/lism/CMAQ5.3/data/BRW/land/ocean_file_2019_BRW.ncf"
+     File type GRDDED3 
+     Execution ID "????????????????"
+     Grid name "2019_BRW"
+     Dimensions: 180 rows, 219 cols, 1 lays, 2 vbles
+     NetCDF ID:    720896  opened as READONLY            
+     Time-independent data.
+     
+     >>--->> WARNING in subroutine XTRACT3
+     Requested variable CHLOnot available in file OCEAN_1which contains variables:
+     
+     SURF
+     OPEN
+
+
+     *** ERROR ABORT in subroutine retrieve_ocean_d on PE 000
+     Could not read CHLO from OCEAN_1
+ PM3EXIT:  date&time specified as 0
+     Date&time specified as 0
+      
+      

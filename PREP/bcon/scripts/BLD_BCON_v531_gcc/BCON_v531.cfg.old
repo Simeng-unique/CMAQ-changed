@@ -1,0 +1,44 @@
+
+model       BCON_v531.exe;
+
+repo        /nuist/scratch/pb02005030/lism/CMAQ5.3/PREP/bcon/src;
+
+lib_base    /nuist/scratch/pb02005030/lism/CMAQ5.3/lib/x86_64/gcc;
+
+lib_1       ioapi/lib;
+
+lib_2       ioapi/include_files;
+
+lib_4       ioapi/lib;
+
+cpp_flags   "";
+
+f_compiler  mpifort;
+
+fstd        "-O3 -funroll-loops -finit-character=32 -Wtabs -Wsurprising -march=native -ftree-vectorize  -ftree-loop-if-convert -finline-limit=512";
+
+dbg         "-Wall -O0 -g -fcheck=all -ffpe-trap=invalid,zero,overflow -fbacktrace";
+
+f_flags     "-ffixed-form -ffixed-line-length-132 -funroll-loops -finit-character=32";
+
+f90_flags   "-ffree-form -ffree-line-length-none -funroll-loops -finit-character=32";
+
+link_flags  "";
+
+ioapi       "-lioapi";
+
+netcdf      "-lnetcdf ";
+
+netcdff      "-lnetcdff";
+
+// project repository location: /nuist/scratch/pb02005030/lism/CMAQ5.3/PREP/bcon/src
+
+// required common
+Module common;
+
+// options are m3conc
+Module m3conc;
+
+// options are profile
+Module profile;
+

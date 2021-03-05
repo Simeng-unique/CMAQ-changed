@@ -1,0 +1,101 @@
+GFORTRAN module version '10' created from const_mod.f90
+MD5:3e2e46a175d4feced9f95d8ef219161d -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+()
+
+(2 'avo' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.7f86118@20') () 0 () () () 0 0)
+3 'const' 'const' '' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN 0 0) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+4 'cpd' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.3ecc3ac@3') () 0 () () () 0 0)
+5 'cpwvap' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.7361988@3') () 0 () () () 0 0)
+6 'cvd' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.2cdb058@3') () 0 () () () 0 0)
+7 'cvwvap' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.5689328@3') () 0 () () () 0 0)
+8 'dg2m' 'const' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+9 'dlvdt' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.9420000@3') () 0 () () () 0 0)
+10 'grav' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.9ce6470@1') () 0 () () () 0 0)
+11 'lf0' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.518b000@5') () 0 () () () 0 0)
+12 'lv0' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.2629880@6') () 0 () () () 0 0)
+13 'molvol' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.166a028@2') () 0 () () () 0 0)
+14 'mwair' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.1cf67a0@2') () 0 () () () 0 0)
+15 'mwwat' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.1203eac@2') () 0 () () () 0 0)
+16 'pi' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 8 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 8 0 0 0
+REAL ()) 0 '0.3243f6a8885a30@1') () 0 () () () 0 0)
+17 'pi180' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.477d1a8@-1') () 0 () () () 0 0)
+18 'rdgas' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.11f1356@3') () 0 () () () 0 0)
+19 'real' '(intrinsic)' '' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN 0 0 FUNCTION) (UNKNOWN 0 0 0 0 UNKNOWN ()) 0 0 () () 19
+() () () 0 0)
+20 'rearth' 'const' '' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+21 'rgasuniv' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 4 0 0 0 REAL ()) 0 '0.85083c0@1') () 0 () () () 0 0)
+22 'rwvap' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.1cd8662@3') () 0 () () () 0 0)
+23 'siday' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.1509418@5') () 0 () () () 0 0)
+24 'solcnst' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 4 0 0 0 REAL ()) 0 '0.55d0000@3') () 0 () () () 0 0)
+25 'stdatmpa' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 4 0 0 0 REAL ()) 0 '0.18bcd00@5') () 0 () () () 0 0)
+26 'stdtemp' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (
+REAL 4 0 0 0 REAL ()) 0 '0.1112666@3') () 0 () () () 0 0)
+27 'stfblz' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.f38beb0@-6') () 0 () () () 0 0)
+28 'vp0' 'const' '' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE 0 0) (REAL 4 0 0 0 REAL ()) 0 0 () (CONSTANT (REAL 4 0 0 0
+REAL ()) 0 '0.2634a3c@3') () 0 () () () 0 0)
+)
+
+('avo' 0 2 'const' 0 3 'cpd' 0 4 'cpwvap' 0 5 'cvd' 0 6 'cvwvap' 0 7
+'dg2m' 0 8 'dlvdt' 0 9 'grav' 0 10 'lf0' 0 11 'lv0' 0 12 'molvol' 0 13
+'mwair' 0 14 'mwwat' 0 15 'pi' 0 16 'pi180' 0 17 'rdgas' 0 18 'real' 0
+19 'rearth' 0 20 'rgasuniv' 0 21 'rwvap' 0 22 'siday' 0 23 'solcnst' 0
+24 'stdatmpa' 0 25 'stdtemp' 0 26 'stfblz' 0 27 'vp0' 0 28)
