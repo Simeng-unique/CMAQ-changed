@@ -37,7 +37,7 @@ MODEL = mcip.exe
 #...gfortran
 FC	= gfortran
 NETCDF = /nuist/p/public/app/netcdf/4.3.0/gnu/4.8.5
-IOAPI_ROOT = /nuist/scratch/pb02005030/pb02005030/CMAQ5.0.1/ioapi-3.2
+IOAPI_ROOT = /nuist/p/public/app/ioapi-3.2
 FFLAGS	= -O3 -I$(NETCDF)/include -I$(IOAPI_ROOT)/Linux2_x86_64
 FFLAGS	= -g -O0 -fopenmp \
           -ffpe-trap='invalid','zero','overflow','underflow'  \

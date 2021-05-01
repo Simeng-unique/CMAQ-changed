@@ -138,8 +138,8 @@
     case gcc:
   
         #> I/O API, netCDF, and MPI library locations
-        setenv IOAPI_INCL_DIR   /nuist/scratch/pb02005030/pb02005030/CMAQ5.0.1/ioapi-3.2/ioapi/fixed_src   #> I/O API include header files
-        setenv IOAPI_LIB_DIR    /nuist/scratch/pb02005030/pb02005030/CMAQ5.0.1/ioapi-3.2/Linux2_x86_64   #> I/O API libraries
+        setenv IOAPI_INCL_DIR   /nuist/p/public/app/ioapi-3.2/ioapi/fixed_src   #> I/O API include header files
+        setenv IOAPI_LIB_DIR    /nuist/p/public/app/ioapi-3.2/Linux2_x86_64   #> I/O API libraries
         setenv NETCDF_LIB_DIR   /nuist/p/public/app/netcdf/4.3.0/gnu/4.8.5/lib  #> netCDF C directory path
         setenv NETCDF_INCL_DIR  /nuist/p/public/app/netcdf/4.3.0/gnu/4.8.5/include  #> netCDF C directory path
         setenv NETCDFF_LIB_DIR  /nuist/p/public/app/netcdf/4.3.0/gnu/4.8.5/lib #> netCDF Fortran directory path
